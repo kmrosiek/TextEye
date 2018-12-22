@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/confirm"
+        android:icon="@drawable/ic_check_black_48dp"
+        android:title="Confirm"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/play_audio"
+        android:icon="@drawable/ic_play_arrow_black_48dp"
+        android:title="Play audio"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/translation"
+        android:icon="@drawable/ic_translate_black_48dp"
+        android:title="Translation"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/camera"
+        android:icon="@drawable/ic_photo_camera_black_48dp"
+        android:title="Camera"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings_black_48dp"
+        android:title="Settings"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/bin"
+        android:icon="@drawable/ic_delete_black_48dp"
+        android:title="Settings"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/ic_add_black_48dp"
+        android:title="Settings"
+        android:visible="false"
+        app:showAsAction="always" />
+</menu>

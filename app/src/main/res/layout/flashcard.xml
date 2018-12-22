@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginBottom="48dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="64dp">
+
+    <FrameLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/flashcard_borders"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/flashcard_text_audio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        app:srcCompat="@drawable/ic_volume_up_primary_48dp" />
+
+                    <TextView
+                        android:id="@+id/flashcard_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:maxLength="80"
+                        android:text="Impossible"
+                        android:textSize="12pt"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/flashcard_sentence"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Actually you don't need to extend any class. Let's say I have an EditText editComment with a drawableRight"
+                        android:textSize="8pt" />
+
+                    <ImageButton
+                        android:id="@+id/flashcard_sentence_audio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@null"
+                        app:srcCompat="@drawable/ic_volume_up_primary_48dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/item_swipe_left_indicator"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="110dp"
+        android:alpha="0"
+
+        android:background="@drawable/approved" />
+
+    <View
+        android:id="@+id/item_swipe_right_indicator"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="40dp"
+        android:alpha="0"
+
+        android:background="@drawable/busted" />
+
+
+</FrameLayout>

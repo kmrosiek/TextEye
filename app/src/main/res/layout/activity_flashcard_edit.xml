@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FlashcardEdit"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/f_edit_edit_flashcard_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textCapSentences"
+        android:layout_margin="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/f_edit_deck_selection_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <Button
+        android:id="@+id/f_edit_save_flashcard_changes_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_margin="20dp"
+        />
+
+</LinearLayout>

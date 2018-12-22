@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Study">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/farthest_card_imitator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="75dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/flashcard_borders"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/middle_card_imitator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="75dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/flashcard_borders"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Congratulations!\nNo more cards to study!"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <com.lorentzos.flingswipe.SwipeFlingAdapterView
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:rotation_degrees="15.5" />
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

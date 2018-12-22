@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TextEye</string>
+    <string name="action_favorite">thisIsMyFavorite</string>
+    <string name="camera_permission_request">The app requires camera permission.</string>
+    <string name="camera_error">Unfortunately, this device does not support Camera2 API.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
